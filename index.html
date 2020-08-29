@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+  body{
+  background-image:url("https://th.bing.com/th/id/OIP.MyO8SRc-4POLEBTRi-ZabAHaFj?w=218&h=180&c=7&o=5&dpr=1.25&pid=1.7");
+  background-repeat:no-repeat;
+  background-attacchment:fixed;
+  background-size:cover;
+  }
+  .header{
+       width:800px;
+       background-color:rgb(0,0,0,6);
+       margin:auto;
+       color:#FFFFFF;
+       padding:10px 0px 10px 0px;
+       text-align:center;
+       border-radius:15px 15px 0px 0px;
+       }
+.MAIN button
+{
+height:30px;
+width:200px;
+margin-left:60px;
+background-color:rgb;
+}
+.MAIN{
+     background-color:rgb(0,0,0,0.5);
+     width:800px;
+     margin:auto;
+     text-allign:center;
+    }
+    form{
+    padding:100px;
+    }
+</style>
+</head>
+<body>
+
+<form action="/predict" method="post">
+<p>Cement (component 1)(kg in a m^3 mixture)</p>
+<p><input type="float" name="cement"/></p>
+<p>Blast Furnace Slag (component 2)(kg in a m^3 mixture)</p>
+<p><input type="float" name="slag"/></p>
+<p>Fly Ash (component 3)(kg in a m^3 mixture)</p>
+<p><input type="float" name="ash"/></p>
+<p>Water  (component 4)(kg in a m^3 mixture)</p>
+<p><input type="float" name="water"/></p>
+<p>Superplasticizer (component 5)(kg in a m^3 mixture)</p>
+<p><input type="float" name="plasticizer"/></p>
+<p>Coarse Aggregate  (component 6)(kg in a m^3 mixture)</p>
+<p><input type="float" name="coarse_aggregate"/></p>
+<p>Fine Aggregate (component 7)(kg in a m^3 mixture)</p>
+<p><input type="float" name="fine_aggregate"/></p>
+<p>Age (day)</p>
+<p><input type="number" name="age"/></p>
+<p><input type="submit" value="click"/></p>
+<h2><font color=red>Compressive strength of Concrete:{{y}}MPa</font></h2>
+</form>     
+</body>
+</html>
